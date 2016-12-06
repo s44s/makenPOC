@@ -31,9 +31,11 @@ Wij willen dat de gebruikers gemotiveerd raken om een bericht te plaatsen omdat 
 
 Ik zou ook graag willen weten of de vraag in de ochtend anders moet zijn dan in de middag. Misschien één vraag die in de ochtend op een andere manier wordt gesteld dan in de middag en de avond. Een voorbeeld in de ochtend: 'Wat ga je vandaag doen?', in de middag: 'Wat ben je aan het doen?', in de avond:'Wat heb je vandaag gedaan?'. 
  
-Om dit te verifiëren, wil ik graag met een BDD-cliënt praten over het soort vragen dat ze zouden verwachten en op welke manier ze de vragen zouden willen zien. 
+Om dit te verifiëren, wil ik graag met een BDD-cliënt praten over het soort vragen dat ze zouden verwachten en op welke manier ze de vragen zouden willen zien. We spreken de BDD-cliënten volgende week als het goed is nog een keer, dit is een mooie gelegenheid om dit aan ze voor te leggen. 
 
 - Op welke manier wordt de verkregen data opgeslagen?
+
+De informatie moet sowieso opgeslagen worden in de database, zodat het vervolgens gevisualiseerd weergegeven kan worden binnen de applicatie. Door middel van SQL-code wordt de data naar de database gestuurd en kan de data ook weer opgevraagd worden. Over hoe dit moet, heb ik niet veel kunnen vinden. De stukken die ik heb kunnen vinden begreep ik niet. 
 
 - Welke mogelijkheden zijn er op het gebied van tijdsgebonden vragen met Javascript?
 
@@ -53,23 +55,23 @@ var s = addZero(d.getSeconds());
 var tijd = h + ":" + m + ":" + s;
 }
 
-Nadat ik het eerste stukje code had gevonden, ben ik opzoek gegaan naar het volgende stukje code. Namelijk de code waarmee we uiteindelijk de vragen gaan veranderen naar aanleiding van de tijd. Ik heb deze code niet kunnen testen, maar als het goed is, wordt er nu om 12 uur in de nacht of later een zin random gekozen uit de array 'mijnZinnenAvond'. Als het anders is dan 12 uur of later, dus eerder, dan wordt er een zin random gekozen uit de array 'mijnZinnenOchtend'. 
+Nadat ik het eerste stukje code had gevonden, ben ik opzoek gegaan naar het volgende stukje code. Namelijk de code waarmee we uiteindelijk de vragen gaan veranderen naar aanleiding van de tijd. Ik heb deze code niet kunnen testen, maar als het goed is, wordt er nu om 12 uur in de nacht of later een zin random gekozen uit de array 'mijnZinnenAvond'. Als het anders is dan 12 uur of later, dus eerder, dan wordt er een zin random gekozen uit de array 'mijnZinnenOchtend'. Ik heb wel een prototype gemaakt met code om de zinnen te laten veranderen, maar dit gebeurt op dit moment door de pagina opnieuw te openen en niet gebaseerd op tijd. 
 
 var random = Math.random();
 
 var mijnZinnenAvond = new Array();
-mijnZinnen[0] = "Wat heb je vandaag gedaan?";
-mijnZinnen[1] = "Wat zou je graag willen doen?";
-mijnZinnen[2] = "Wat heb je vandaag bereikt?";
-mijnZinnen[3] = "Heb je vandaag iets leuks gedaan?";
+mijnZinnenAvond[0] = "Wat heb je vandaag gedaan?";
+mijnZinnenAvond[1] = "Wat zou je graag willen doen?";
+mijnZinnenAvond[2] = "Wat heb je vandaag bereikt?";
+mijnZinnenAvond[3] = "Heb je vandaag iets leuks gedaan?";
 
 var lengteAvond = mijnZinnenAvond.length;
 
 var mijnZinnenOchtend= new Array();
-mijnZinnen[0] = "Wat ga je doen vandaag?";
-mijnZinnen[1] = "Wat zou je graag willen doen?";
-mijnZinnen[2] = "Wat wil je vandaag bereiken?";
-mijnZinnen[3] = "Hoe wil je je voelen vandaag?";
+mijnZinnenOchtend[0] = "Wat ga je doen vandaag?";
+mijnZinnenOchtend[1] = "Wat zou je graag willen doen?";
+mijnZinnenOchtend[2] = "Wat wil je vandaag bereiken?";
+mijnZinnenOchtend[3] = "Hoe wil je je voelen vandaag?";
 
 var lengteOchtend = mijnZinnenOchtend.length;
 
@@ -78,4 +80,7 @@ if (d.getHours() >= 12 && d.getMinutes() >= 00) {
 else {
   document.getElementById("tekst").innerHTML = mijnZinnenOchtend[Math.floor(random*(lengteOchtend-1))];
 }
+
+
+Bron: http://www.2john.com/html/js/js-dt.htm#tijd
 
