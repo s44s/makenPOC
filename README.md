@@ -53,9 +53,29 @@ var s = addZero(d.getSeconds());
 var tijd = h + ":" + m + ":" + s;
 }
 
-Nadat ik het eerste stukje code had gevonden, ben ik opzoek gegaan naar het volgende stukje code. Namelijk de code waarmee we uiteindelijk de vragen laten veranderen naar aanleiding van de tijd. 
+Nadat ik het eerste stukje code had gevonden, ben ik opzoek gegaan naar het volgende stukje code. Namelijk de code waarmee we uiteindelijk de vragen gaan veranderen naar aanleiding van de tijd. Ik heb deze code niet kunnen testen, maar als het goed is, wordt er nu om 12 uur in de nacht of later een zin random gekozen uit de array 'mijnZinnenAvond'. Als het anders is dan 12 uur of later, dus eerder, dan wordt er een zin random gekozen uit de array 'mijnZinnenOchtend'. 
 
-if (d.getHours() >= 00 && d.getMinutes() >= 00) {
+var random = Math.random();
 
-else 
-   
+var mijnZinnenAvond = new Array();
+mijnZinnen[0] = "Wat heb je vandaag gedaan?";
+mijnZinnen[1] = "Wat zou je graag willen doen?";
+mijnZinnen[2] = "Wat heb je vandaag bereikt?";
+mijnZinnen[3] = "Heb je vandaag iets leuks gedaan?";
+
+var lengteAvond = mijnZinnenAvond.length;
+
+var mijnZinnenOchtend= new Array();
+mijnZinnen[0] = "Wat ga je doen vandaag?";
+mijnZinnen[1] = "Wat zou je graag willen doen?";
+mijnZinnen[2] = "Wat wil je vandaag bereiken?";
+mijnZinnen[3] = "Hoe wil je je voelen vandaag?";
+
+var lengteOchtend = mijnZinnenOchtend.length;
+
+if (d.getHours() >= 12 && d.getMinutes() >= 00) {
+   document.getElementById("tekst").innerHTML = mijnZinnenAvond[Math.floor(random*(lengteAvond-1))];
+else {
+  document.getElementById("tekst").innerHTML = mijnZinnenOchtend[Math.floor(random*(lengteOchtend-1))];
+}
+
