@@ -31,7 +31,7 @@ Google Chrome is al een langere tijd aan een mobiele website die zich als een na
 Wat zijn de voordelen van een PWA?
 - je kan push notificaties sturen (gebruiker moet wel toestemming geven)
 - je kan hem offline gebruiken 
-- geen download nodig anuit de app store
+- geen download nodig vanuit de app store
 - je hoeft niet te investeren in een dure mobiele app (PWA is relatief goedkoop in implementatie en onderhoud)
 - PWA wordt gehost op het web, dat betekent minder opslagruimte nodig op je telefoon (geen app downloaden)
 - je kunt altijd nieuwe versies lanceren, je bent niet afhankelijk van een app store/google play
