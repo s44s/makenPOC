@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Progressive Web Application</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="This web application will work in offline, has a splash screen add to home screen etc,.">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#0288d1">
+    <meta name="msapplication-TileColor" content="#0288d1">
+    <meta name="msapplication-TileImage" content="./images/icons/mstile-150x150.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Progressive Web Application">
+    <meta name="application-name" content="Progressive Web Application">
+
+		<!-- icon -->
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png">
+		<link rel="manifest" href="./manifest.json">
+
+		<!-- styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="./css/agenda-item.css">
+  </head>
+
+	<body>
+		<header>
+	  	<button class="hamburger">
+	    	<svg class="hamburger__icon" width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+	      	<path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+	      </svg>
+	    </button>
+	    <span>Suus</span>
+	  </header>
+
+	  <section class="menu">
+	  	<h2 class="menu__header">My Health Diary</h2>
+	    <ul class="menu__list">
+	      <li><a href="./index.html">Home</a></li>
+	      <li><a href="./index.html">Mijn fotodagboek</a></li>
+				<li><a class="visited" href="./agenda.html">Agenda</a></li>
+	      <li><a href="/index.html">Mijn groep</a></li>
+	      <li><a href="/index.html">Y-BOCS</a></li>
+	      <li><a href="/index.html">Instellingen</a></li>
+	      <li><a href="/index.html">Afmelden</a></li>
+		</section>
+	  <section class="menu__overlay"></section>
+
+		<main>
+			<article>
+				<section class="agenda-item">
+					<img src="./images/alarm-clock.png" alt="alarm">
+					<p>woensdag 25 januari 2017
+					<br>
+					hele dag
+					</p>
+				</section>
+				<section class="agenda-item">
+					<img src="./images/placeholder.png" alt="place">
+          <input placeholder="locatie toevoegen"></input>
+				</section>
+				<section class="">
+					<img src="./images/Oval 3.png" alt="color">
+					<p class="button-color">standaardkleur <button class="button-color">></button></p>
+						<section class="selectcolor">
+								<section class="name">
+									<p>zie ik helemaal niet tegen op</p>
+									<p>zie ik niet tegen op</p>
+									<p>zie ik een beetje tegen op</p>
+									<p>zie ik tegen op</p>
+									<p>zie ik heel erg tegen op</p>
+								</section>
+								<section class="color">
+									<img src="./images/Oval 35.png" alt="color">
+									<img src="./images/Oval 34.png" alt="color">
+									<img src="./images/Oval 33.png" alt="color">
+									<img src="./images/Oval 32.png" alt="color">
+									<img src="./images/Oval 31.png" alt="color">
+								</section>
+						</section>
+				</section>
+		</main>
+
+	  <!-- JS Files  -->
+	  <script src="https://apis.google.com/js/client.js"> </script>
+		<script src="./js/jquery-3.1.1.min.js"></script>
+	  <script src="./js/selectcolor.js"></script>
+		<script src="./js/app.js"></script>
+	  <script src="./js/menu.js"></script>
+	  <script src="./js/offline.js"></script>
+		<script src="./js/push.js"></script>
+	  <script src="./js/share.js"></script>
+	  <script src="./js/sync.js"></script>
+		<script src="./js/toast.js"></script>
+
+		<script type="text/javascript">
+		//If serviceWorker supports, then register it.
+		if ("serviceWorker" in navigator) {
+			navigator.serviceWorker.register('./serviceWorker.js', { scope: "./" }) //setting scope of sw
+			.then(function (registration) {
+				console.info('Service worker is registered!');
+			})
+			.catch(function (error) {
+				console.error('Service worker failed ', error);
+			});
+		}
+		</script>
+  </body>
+</html>
