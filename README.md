@@ -1,76 +1,41 @@
-### <p align="center"><img width="150px" height="150px" src="https://gokulkrishh.github.io/demo-progressive-web-app/images/icons/android-chrome-192x192.png"></p>
+README.md
 
-# [Progressive Web Application](https://demopwa.in)
+Had ik nog moeten doen voor het opleveren van project:
+	CSS beter cleanen:
+    - [ ] sections om alle agenda items heen zetten om beter te kunnen stijlen
+        - [ ] vlaggetjes op resize laten werken ipv reload 
+        - [ ] color picker juist positioneren (netter css-en)    Agenda:
+- [ ] agenda kleur kunnen toevoegen aan event 
+- [ ] button toevoegen om terug te gaan naar agenda overzicht (sketch)
+- [ ] agenda item met echte data importeren op de pagina’s (aparte pagina aanmaken per item)
 
-*A demo for progressive web application with features like offline, push notifications, background sync etc,*
+Niet voor nu: 
+Homepagina:
+- de vraag moet ook gebaseerd zijn op het weer, de locatie en de activiteit van de gebruiker binnen de applicatie. 
+- het kunnen reageren op andere gebruikers verwerken in de applicatie + onderzoek naar doen 
+- verder onderzoek doen naar de vraag van de dag
 
-### [Live](https://demopwa.in)
+Agenda:
+- agenda niet telkens hoeven te autoriseren, eenmalig en dan automatisch bijwerken ipv steeds op te moeten halen 
+- kleur opslaan in het agenda overzicht (agenda.html)
+- kleur agenda events gebruiken in de vraag van de dag 
+- agenda item kunnen toevoegen in Google agenda vanuit de applicatie
+- niet alleen een Google agenda gebruiken, maar alle mogelijke agenda’s op computer/smartphone (Cronofy)
 
-### Installation
+PWA/technisch:
+- offline werkend maken door de gehele applicatie 
+- notificaties op het juiste moment laten komen ipv gelinkt aan een knop
+- back-end toevoegen aan de gehele applicatie 
 
-#### `Step 1` - clone the repo
-  
-```bash
-$ git clone https://github.com/gokulkrishh/demo-progressive-web-app
-```
+Bericht plaatsen:
+- De spanningswaarde bij het bericht moet zich aanpassen aan de spanningswaarde die de gebruikers heeft meegegeven (technisch werkend krijgen)
+- De gebruikers moeten de risico's/signalen per bericht kunnen aanpassen (technisch werkend krijgen)
 
-#### `Step 2` - cd in the repo
+Overige onderdelen applicatie:
+- de gestelde vragen moeten terug te vinden zijn voor de gebruiker
+- y-bocs moet uitgewerkt worden  
+- een overzicht voor de gebruiker waar hij/zij een proces kan zien in zijn/haar spanningswaardes/risico’s/signalen
+- de gebruiker moet toestemming kunnen geven na het aanmelden bij de applicatie voor het gebruik van de locatie en de agenda
+- het privacy gedeelte moet nog in de applicatie verwerkt worden: kiezen of de gebruiker het bericht anoniem, openbaar of met een groep wilt gaan delen
+- het aanmeld procedure moet nog gemaakt worden (licentiecode, naam, profielfoto(?), groep, terugvalpreventieplan
 
-```bash
-$ cd demo-progressive-web-app
-```
-
-#### `Step 3` - install dependencies
-
-```bash
-$ npm install
-```
-
-#### `Step 4` - run application
-
-```bash
-$ npm run start
-```
-
-In browser, open [http://localhost:3000](http://localhost:3000)
-
-## Main features
-
-- [x] - App Shell Architecture
-
-- [x] - Service Worker
-
-- [x] - Add to home screen, Splash screen, Browser mode etc,
-
-- [x] - Fallback when offline
-
-- [x] - Online/Offline events
-
-- [x] - Fetch API
-
-- [x] - Push notification
-
-- [x] - Background sync
-
-- [x] - Web share
-
-### Get started with PWA development
-
-- [Codelabs](https://pwa.tips/codelabs)
-
-### Progressive Web Apps
-
-- [PWA Rocks](https://pwa.rocks)
-
-### Reference
-
-- [Google Developer Site](https://developers.google.com/web/progressive-web-apps)
-- [Web Share API](https://developers.google.com/web/updates/2016/10/navigator-share)
-
-#### License
-
-MIT © [Gokulakrishnan](https://github.com/gokulkrishh)
-
-<div align="center">
-  <sub>If you found a bug or some improvments, feel free to raise an issue and send a PR!</sub>
-</div>
