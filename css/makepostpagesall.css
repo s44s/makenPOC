@@ -1,0 +1,31 @@
+/* makepost all pages */
+.footer__allpages{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer__box {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    height: 8%;
+    align-items: center;
+    background-color: white;
+}
+
+.img__prev{
+    display: block;
+}
+
+.img__steps{
+    display: block;
+    width: 75%;
+    text-align: center;
+}
+
+.img__next{
+    display: block;
+}

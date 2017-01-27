@@ -1,0 +1,94 @@
+/* agenda */
+.tijd, .datum, .activiteit {
+	margin-bottom: 5px;
+}
+
+#authorize__button{
+	min-width: 30vw;
+	margin-left: 30vw;
+	margin-top: 5vw;
+	background-color: #F9A43A;
+}
+
+#calendar {
+	display: flex;
+	flex-direction: row;
+}
+
+#agenda {
+	margin-left: 5vw;
+	display: flex;
+	flex-direction: column;
+}
+
+#events {
+	display: flex;
+	margin-left: 10vw;
+	flex-direction: column;
+	width: 50vw;
+}
+
+.datum__dag {
+	font-family: "Open Sans";
+	font-size: 40px;
+	text-align: left;
+}
+
+.datum__maand {
+	font-family: "Open Sans";
+	font-size: 15px;
+	text-align: left;
+}
+
+.activiteit {
+	font-size: 20px;
+	margin: 0;
+	margin-left: 20vw;
+	margin-top: -15vw;
+	padding: 1vw;
+	text-align: left;
+	background-color: #D8D8D8;
+	width: 65vw;
+	padding-left: 2vw;
+}
+
+.tijd {
+	font-size: 15px;
+	padding: 1vw;
+	margin-left: 20vw;
+	font-weight: lighter;
+	text-align: left;
+	background-color: #D8D8D8;
+	width: 65vw;
+	padding-left:: 2vw;
+}
+
+.selectkleur {
+		align-self: flex-end;
+		margin-top: -7vh;
+		margin-right: 8vh;
+		margin-bottom: 9vh;
+		color: black;
+}
+
+.calendar {
+	display: none;
+}
+
+.calendar h1 {
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+.calendar .uitleg {
+	margin-left: 20px;
+	margin-bottom: 5vh;
+}
+
+img[alt="plus"] {
+	width: 50%;
+}
+
+.fab {
+	background-color: #3B83F3;
+}

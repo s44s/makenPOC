@@ -1,0 +1,159 @@
+/* homepagina */
+main{
+    display: flex;
+    max-width: 100vw;
+    max-height: 1000px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.post__all {
+    display: flex;
+    width: 43%;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+    font-weight: 500;
+
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 15px;
+
+    background: #F7F7F7;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+    padding-top: 0%;
+}
+
+#post__one {
+    border: dashed black 1px;
+    padding-top: 2%;
+    padding: 2%;
+		height: 300px;
+}
+
+.post__img {
+    width: 100%;
+		height: 200px;
+    margin-bottom: 4%;
+		background-image: url("../images/dog.jpg");
+		background-size: cover;
+		border: none !important;
+}
+
+.post__img.first {
+		background-image: url("../images/bos2.jpg");
+		background-size: cover;
+}
+
+.post__img.second {
+		background-image: url("../images/party.jpg");
+}
+
+.post__img.third {
+		background-image: url("../images/fitness-sportschool-nijhoff.jpg");
+}
+
+.post__img.fourth {
+		background-image: url("../images/walibi2.jpg");
+}
+
+.post__name{
+    order: 1;
+    display: block;
+    width: 50%;
+    padding-left: 4%;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.post__date{
+    order: 2;
+    display: block;
+    width: 50%;
+    text-align:right;
+    font-size: 0.7em;
+    font-weight: 400;
+    margin-top: 2%;
+    padding-right: 4%;
+}
+
+.post__text {
+    order: 3;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.post__more {
+    order: 4;
+    display: block;
+    width: 100%;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 0.7em;
+    font-weight: 400;
+    padding-right: 4%;
+    padding-bottom: 5%;
+}
+
+#add__button {
+    display: block;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 0%;
+}
+
+#post__tell {
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #7A7D80;
+}
+
+a {
+	color: black;
+}
+
+.marker {
+	position: absolute;
+	top: 315px;
+	left: 35%;
+}
+
+.marker2 {
+	position: absolute;
+	left: 35%;
+}
+
+.marker2 g{
+	fill: #D90000;
+}
+
+.marker3 {
+	position: absolute;
+	top: 0;
+	right: 6%;
+}
+
+.marker3 g{
+	fill: #F7C52F;
+}
+
+.marker4 {
+	position: absolute;
+	right: 6%;
+}
+
+.marker4 g{
+	fill: #108A4E;
+}
