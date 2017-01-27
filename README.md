@@ -39,3 +39,5 @@ Overige onderdelen applicatie:
 - het privacy gedeelte moet nog in de applicatie verwerkt worden: kiezen of de gebruiker het bericht anoniem, openbaar of met een groep wilt gaan delen
 - het aanmeld procedure moet nog gemaakt worden (licentiecode, naam, profielfoto(?), groep, terugvalpreventieplan
 
+Link prototype:
+https://oege.ie.hva.nl/~voordes003/index.html
