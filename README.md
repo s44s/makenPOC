@@ -1,13 +1,13 @@
 README.md
 
 Had ik nog moeten doen voor het opleveren van project:
-	CSS beter cleanen:
-    - [ ] sections om alle agenda items heen zetten om beter te kunnen stijlen
-        - [ ] vlaggetjes op resize laten werken ipv reload 
-        - [ ] color picker juist positioneren (netter css-en)    Agenda:
-- [ ] agenda kleur kunnen toevoegen aan event 
-- [ ] button toevoegen om terug te gaan naar agenda overzicht (sketch)
-- [ ] agenda item met echte data importeren op de pagina’s (aparte pagina aanmaken per item)
+CSS beter cleanen:
+    - sections om alle agenda items heen zetten om beter te kunnen stijlen
+    - vlaggetjes op resize laten werken ipv reload 
+    - color picker juist positioneren (netter css-en)    Agenda:
+- agenda kleur kunnen toevoegen aan event 
+- button toevoegen om terug te gaan naar agenda overzicht (sketch)
+- agenda item met echte data importeren op de pagina’s (aparte pagina aanmaken per item)
 
 Niet voor nu: 
 Homepagina:
@@ -41,3 +41,7 @@ Overige onderdelen applicatie:
 
 Link prototype:
 https://oege.ie.hva.nl/~voordes003/index.html
+
+
+Progressie: wat heb ik geleerd: 
+Tijdens het vak maken ben ik bezig geweest met het maken van een Progressive Web App. Voor het eHealth project had ik wel eens van deze term gehoord, maar wist ik niet wat het precies deed. Ik heb geleerd wat een PWA is en hoe dit samenwerkt met een Service Worker. Daarnaast ben ik mij gaan verdiepen in de functionaliteiten van een PWA. Zo ben ik bezig geweest met het maken van pushnotificaties en heb ik ervoor gezorgd dat een deel van de applicatie offline gebruikt kan worden. Waar ik mij minder op heb gefocused is de manier van CSS-en en Javascripten. Dit had ik wel graag wat meer gedaan. 
